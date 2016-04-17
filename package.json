@@ -1,0 +1,23 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server public & node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markbrown4/websockets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markbrown4/websockets/issues"
+  },
+  "homepage": "https://github.com/markbrown4/websockets#readme",
+  "description": "",
+  "dependencies": {
+    "live-server": "^0.9.2",
+    "ws": "^1.1.0"
+  }
+}
