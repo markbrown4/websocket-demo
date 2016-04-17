@@ -1,7 +1,13 @@
-#!/usr/bin/env node
-var WebSocketServer = require('ws').Server;
-var wss = new WebSocketServer({ port: 8081 });
 
+var http = require('http');
+var express = require('express');
+var WSS = require('ws').Server;
+
+var app = express().use(express.static('public'));
+var server = http.createServer(app);
+server.listen(8080, '127.0.0.1');
+
+var wss = new WSS({ port: 8081 });
 wss.on('connection', function(socket) {
   console.log('Opened Connection 🎉');
 
@@ -14,7 +20,7 @@ wss.on('connection', function(socket) {
   });
 
   socket.on('close', function() {
-    console.log('Closed Connection');
+    console.log('Closed Connection 😱');
   });
 
 });
@@ -29,4 +35,4 @@ var broadcast = function() {
     console.log('Sent: ' + json);
   });
 }
-setInterval(broadcast, 3000)
+setInterval(broadcast, 3000);

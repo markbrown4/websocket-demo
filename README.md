@@ -7,6 +7,7 @@ Messages can be sent and received on both ends.
 ```bash
 npm install
 npm run start
+open http://localhost:8080/
 ```
 
 Try opening multiple browsers and looking at the logs on client and server.
@@ -16,7 +17,7 @@ Here's what's happening:
 - The client sends `{ message: 'Hello' }` to the server
 - The server sends `{ message: 'Gotcha '}` when a connection is established.
 - The server keeps track of all connections in `wss.clients`
-- Every three seconds the server broadcasts `{ message: 'Hello hello' }` to all connections.
+- Every three seconds the server broadcasts `{ message: 'Hello hello!' }` to all connections.
 - The console logs all messages and connections on the client and server.
 - Connections can be closed by hitting the `Close` button or closing the window.
 - You can send `{ message: 'Hey' }` to the server by hitting `Send Message`.
