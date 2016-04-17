@@ -18,7 +18,6 @@ Here's what's happening:
 - The server sends `{ message: 'Gotcha '}` when a connection is established.
 - The server keeps track of all connections in `wss.clients`
 - Every three seconds the server broadcasts `{ message: 'Hello hello!' }` to all connections.
-- The console logs all messages and connections on the client and server.
 - Connections can be closed by hitting the `Close` button or closing the window.
 - You can send `{ message: 'Hey' }` to the server by hitting `Send Message`.
 
