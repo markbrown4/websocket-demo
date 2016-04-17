@@ -23,6 +23,7 @@ Here's what's happening:
 
 ## Links
 
+- [React to data changes](http://rauchg.com/2014/7-principles-of-rich-web-applications/#react-to-data-changes)
 - [Writing WebSocket client applications](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications)
 - [Writing WebSocket servers](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers)
 - [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
