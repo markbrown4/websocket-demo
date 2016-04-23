@@ -17,6 +17,12 @@ wss.on('connection', function(socket) {
 
   socket.on('message', function(message) {
     console.log('Received: ' + message);
+
+    wss.clients.forEach(function each(client) {
+      var json = JSON.stringify({ message: 'Something changed' });
+      client.send(json);
+      console.log('Sent: ' + json);
+    });
   });
 
   socket.on('close', function() {

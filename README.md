@@ -20,6 +20,7 @@ Here's what's happening:
 - Every three seconds the server broadcasts `{ message: 'Hello hello!' }` to all connections.
 - Connections can be closed by hitting the `Close` button or closing the window.
 - You can send `{ message: 'Hey' }` to the server by hitting `Send Message`.
+- The server sends `{ message: 'Something changed' }` to all connections when a message is received.
 
 ## Links
 
