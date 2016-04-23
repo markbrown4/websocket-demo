@@ -15,6 +15,10 @@ socket.onmessage = function (event) {
   log('Received: ' + event.data);
 }
 
+socket.onclose = function(event) {
+  log('Closed connection 😱');
+}
+
 document.querySelector('#close').addEventListener('click', function(event) {
   socket.close();
   log('Closed connection 😱');
